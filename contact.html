@@ -1,120 +1,178 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Us - Bright Light</title>
+    <title>Contact Us - Bright Light Electrical Consultancy</title>
+    <meta
+      name="description"
+      content="Get in touch with Bright Light Electrical Consultancy for a free quote or consultation on any electrical service."
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <!-- Navigation -->
     <nav class="navbar">
       <div class="container nav-container">
-        <a href="index.html" class="logo">Bright Light</a>
-
-        <!-- Hamburger Menu -->
-        <div class="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
+        <a href="index.html" class="logo"> BrightLight </a>
+        <div
+          class="hamburger"
+          tabindex="0"
+          role="button"
+          aria-label="Toggle navigation"
+        >
+          <span></span><span></span><span></span>
         </div>
-
         <ul class="nav-menu">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="projects.html">Projects</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+          <li><a href="contact.html" class="nav-cta">Get Quote</a></li>
         </ul>
       </div>
     </nav>
 
-    <section class="hero">
-      <div class="container hero-content">
+    <!-- Hero -->
+    <section class="hero hero-center">
+      <div class="container">
         <h1>Contact Us</h1>
         <p>Let's discuss your electrical needs</p>
       </div>
     </section>
 
+    <!-- Contact Section -->
     <section class="contact">
       <div class="container">
-        <!-- Enhanced Contact Info -->
-        <div class="contact-info fade-in">
-          <h2>Get In Touch</h2>
+        <div class="contact-container">
+          <!-- Info Column -->
+          <div class="contact-info fade-in">
+            <h2>Get In Touch</h2>
 
-          <div class="contact-details">
-            <div class="contact-item">
-              <span class="contact-icon">📞</span>
-              <h4>Phone</h4>
-              <p><a href="tel:0708918559">0708 918 559</a></p>
-              <p><a href="tel:0798084647">0798 084 647</a></p>
+            <div class="contact-details">
+              <div class="contact-item">
+                <span class="contact-icon">📞</span>
+                <div class="contact-text">
+                  <h4>Phone</h4>
+                  <p><a href="tel:0708918559">0708 918 559</a></p>
+                  <p><a href="tel:0798084647">0798 084 647</a></p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <span class="contact-icon">✉️</span>
+                <div class="contact-text">
+                  <h4>Email</h4>
+                  <p>
+                    <a href="mailto:brightlighthouseelectrical@gmail.com">
+                      brightlighthouseelectrical@gmail.com
+                    </a>
+                  </p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <span class="contact-icon">🕒</span>
+                <div class="contact-text">
+                  <h4>Business Hours</h4>
+                  <p>Mon – Fri: 8AM – 6PM</p>
+                  <p>Sun: 9AM – 2PM</p>
+                </div>
+              </div>
             </div>
 
-            <div class="contact-item">
-              <span class="contact-icon">✉️</span>
-              <h4>Email</h4>
-              <p>
-                <a href="mailto:brightlighthouseelectrical@gmail.com"
-                  >brightlighthouseelectrical@gmail.com</a
-                >
-              </p>
-            </div>
-
-            <div class="contact-item">
-              <span class="contact-icon">🕒</span>
-              <h4>Business Hours</h4>
-              <p>Mon - Fri: 8AM - 6PM</p>
-              <p>Sun: 9AM - 2PM</p>
+            <div class="business-hours">
+              <h4>24/7 Emergency Service</h4>
+              <p>For urgent electrical issues, call us anytime!</p>
             </div>
           </div>
 
-          <div class="business-hours">
-            <h4>24/7 Emergency Service</h4>
-            <p>For urgent electrical issues, call us anytime!</p>
+          <!-- Form Column -->
+          <div class="contact-form-wrap fade-in">
+            <h2>Send Us a Message</h2>
+            <form
+              id="contactForm"
+              class="contact-form"
+              action="https://script.google.com/macros/s/AKfycbymLW3-uH_sxmzk1_BPLNq5Py9cP4UL67--EaH3DZ-MN7VDrRDTJm1kO8105E0swwBQ/exec"
+              method="POST"
+              data-redirect-delay="9000"
+              data-message-dismiss="9000"
+            >
+              <div class="form-group">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input type="tel" name="phone" placeholder="Your Phone" />
+              </div>
+              <div class="form-group">
+                <textarea
+                  name="message"
+                  placeholder="Your Message"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="btn btn-primary"
+                id="submitBtn"
+                style="width: 100%; padding: 13px"
+              >
+                Send Message
+              </button>
+            </form>
           </div>
         </div>
-
-        <form
-          id="contactForm"
-          class="contact-form fade-in"
-          action="https://script.google.com/macros/s/AKfycbymLW3-uH_sxmzk1_BPLNq5Py9cP4UL67--EaH3DZ-MN7VDrRDTJm1kO8105E0swwBQ/exec"
-          method="POST"
-          data-redirect-delay="9000"
-          data-message-dismiss="9000"
-        >
-          <div class="form-group">
-            <input type="text" name="name" placeholder="Your Name" required />
-          </div>
-          <div class="form-group">
-            <input
-              type="email"
-              name="email"
-              placeholder="Your Email"
-              required
-            />
-          </div>
-          <div class="form-group">
-            <input type="tel" name="phone" placeholder="Your Phone" />
-          </div>
-          <div class="form-group">
-            <textarea
-              name="message"
-              placeholder="Your Message"
-              rows="5"
-              required
-            ></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary" id="submitBtn">
-            Send Message
-          </button>
-        </form>
       </div>
     </section>
 
+    <!-- Footer -->
     <footer class="footer">
       <div class="container">
-        <p>
-          &copy; 2025 Bright Light Electrical Consultancy. All rights reserved.
-        </p>
+        <div class="footer-top">
+          <div class="footer-brand">
+            <a href="index.html" class="logo"> BrightLight </a>
+            <p>Energy &amp; electrical services you can trust.</p>
+          </div>
+          <div class="footer-contact">
+            <h4>Contact Info</h4>
+            <a href="tel:0708918559">0708 918 559</a>
+            <a href="tel:0798084647">0798 084 647</a>
+            <a href="mailto:brightlighthouseelectrical@gmail.com"
+              >brightlighthouseelectrical@gmail.com</a
+            >
+          </div>
+          <div class="footer-cta-wrap">
+            <a href="contact.html" class="btn btn-cta">Get Started</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2025 Bright Light Electrical Consultancy. All rights
+            reserved.
+          </p>
+          <nav class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+        </div>
       </div>
     </footer>
 

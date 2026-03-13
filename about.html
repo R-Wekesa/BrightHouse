@@ -1,44 +1,52 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us - Bright Light</title>
+    <title>About Us - Bright Light Electrical Consultancy</title>
+    <meta
+      name="description"
+      content="Learn about Bright Light House Electrical Consultancy — our story, values, and the team powering your electrical solutions."
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <!-- Navigation -->
     <nav class="navbar">
       <div class="container nav-container">
-        <a href="index.html" class="logo">Bright Light</a>
-
-        <!-- Hamburger Menu -->
-        <div class="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
+        <a href="index.html" class="logo"> BrightLight </a>
+        <div
+          class="hamburger"
+          tabindex="0"
+          role="button"
+          aria-label="Toggle navigation"
+        >
+          <span></span><span></span><span></span>
         </div>
-
         <ul class="nav-menu">
           <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
+          <li><a href="about.html" class="active">About</a></li>
           <li><a href="services.html">Services</a></li>
           <li><a href="projects.html">Projects</a></li>
           <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html" class="nav-cta">Get Quote</a></li>
         </ul>
       </div>
     </nav>
 
-    <section class="hero">
-      <div class="container hero-content">
+    <!-- Hero -->
+    <section class="hero hero-center">
+      <div class="container">
         <h1>About Bright Light</h1>
-        <p>Powering progress with expertise and innovation</p>
+        <p>Powering progress with expertise, innovation and integrity</p>
       </div>
     </section>
 
-    <section class="about">
+    <!-- Our Story -->
+    <section class="about about-page">
       <div class="container">
         <div class="about-content">
-          <div class="fade-in">
+          <div class="about-text fade-in">
             <h2>Our Story</h2>
             <p>
               Bright Light Electrical Consultancy was founded with a vision to
@@ -52,35 +60,134 @@
               both traditional and modern electrical technologies, ensuring your
               projects are in capable hands.
             </p>
+            <div class="stats-bar">
+              <div class="stat-item">
+                <h3>10+</h3>
+                <p>Years Experience</p>
+              </div>
+              <div class="stat-item">
+                <h3>500+</h3>
+                <p>Projects Done</p>
+              </div>
+              <div class="stat-item">
+                <h3>24/7</h3>
+                <p>Emergency Support</p>
+              </div>
+            </div>
+            <div class="mt-2">
+              <a href="projects.html" class="btn btn-primary">View Projects</a>
+              <a
+                href="contact.html"
+                class="btn btn-outline"
+                style="margin-left: 0.8rem"
+                >Get Quote</a
+              >
+            </div>
           </div>
-          <div class="fade-in">
-            <!-- Placeholder for story image -->
-            <div
-              style="
-                background: var(--secondary);
-                height: 300px;
-                border-radius: 15px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                color: white;
-              "
-            >
-              Our Story Image
-            </div>
-            <div style="margin-top: 1.25rem">
-              <a href="projects.html" class="btn btn-outline">View Projects</a>
-            </div>
+          <div class="about-image fade-in">
+            <img
+              src="images/WhatsApp Image 2025-05-26 at 17.21.18.jpeg"
+              alt="Bright Light team at work"
+              loading="lazy"
+            />
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Our Values -->
+    <section class="section section-light">
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Core Values</h2>
+          <div class="underline"></div>
+          <p>The principles that guide everything we do</p>
+        </div>
+        <div class="values-grid">
+          <div class="value-card fade-in">
+            <div class="value-icon">🛡️</div>
+            <h3>Safety First</h3>
+            <p>
+              Every installation and repair follows strict safety standards and
+              regulations.
+            </p>
+          </div>
+          <div class="value-card fade-in">
+            <div class="value-icon">⚡</div>
+            <h3>Expertise</h3>
+            <p>
+              Certified professionals with deep knowledge across all electrical
+              disciplines.
+            </p>
+          </div>
+          <div class="value-card fade-in">
+            <div class="value-icon">🌱</div>
+            <h3>Sustainability</h3>
+            <p>
+              Promoting renewable energy and energy-efficient solutions for a
+              greener future.
+            </p>
+          </div>
+          <div class="value-card fade-in">
+            <div class="value-icon">🤝</div>
+            <h3>Reliability</h3>
+            <p>
+              We show up on time, every time, and stand behind every service we
+              provide.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Strip -->
+    <div class="contact-strip">
+      <div class="container">
+        <div class="contact-strip-inner">
+          <div>
+            <h2>Ready to Work With Us?</h2>
+            <p>Contact us today for a free consultation and quote</p>
+          </div>
+          <a href="contact.html" class="btn btn-cta">Get Started</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
     <footer class="footer">
       <div class="container">
-        <p>
-          &copy; 2025 Bright Light Electrical Consultancy. All rights reserved.
-        </p>
+        <div class="footer-top">
+          <div class="footer-brand">
+            <a href="index.html" class="logo">
+              BrightLight
+            </a>
+            <p>Energy &amp; electrical services you can trust.</p>
+          </div>
+          <div class="footer-contact">
+            <h4>Contact Info</h4>
+            <a href="tel:0708918559">0708 918 559</a>
+            <a href="tel:0798084647">0798 084 647</a>
+            <a href="mailto:brightlighthouseelectrical@gmail.com"
+              >brightlighthouseelectrical@gmail.com</a
+            >
+          </div>
+          <div class="footer-cta-wrap">
+            <a href="contact.html" class="btn btn-cta">Get Started</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2025 Bright Light Electrical Consultancy. All rights
+            reserved.
+          </p>
+          <nav class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="services.html">Services</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+        </div>
       </div>
     </footer>
 
